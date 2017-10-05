@@ -1,0 +1,13 @@
+function mutation(arr) {
+  var target = arr[0].toLowerCase();
+  var words = arr[1].toLowerCase();
+  for(var i = 0; i<words.length; i++){
+    if(target.indexOf(words[i])<0){
+      return false;
+      
+    }
+  }
+  return true;
+}
+
+mutation(["hello", "hey"]);
